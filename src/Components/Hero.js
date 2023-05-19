@@ -30,7 +30,7 @@ function Hero() {
   
   
   return (
-    <div className='text-[#74e2ae] hero flex flex-col justify-center items-center md:mt-24 mt-10 '>
+    <div className='text-[#74e2ae] hero flex flex-col justify-center items-center md:mt-24 mt-32 '>
         <div className='flex justify-center items-center img-sec'>
         <img src={Logo} className='md:w-[37%] '></img>
         </div>
