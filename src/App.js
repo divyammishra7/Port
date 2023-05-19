@@ -1,24 +1,26 @@
 import logo from './logo.svg';
-import './App.css';
+
+import './index.css';
+import { useRef, useState } from 'react';
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import Logo from './Assets/Logo.jpg'
+import About from './Components/About';
+import Scroll from './Components/Scroll';
 
 function App() {
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Navbar/>
+   <Hero/>
+   <Scroll/>
+   <About/>
+   <FloatingWhatsApp darkMode={true}  accountName='Divyam Mishra' avatar={Logo} chatMessage='Hello there! 🤝
+How can I help?'/>
+   </>
   );
 }
 
